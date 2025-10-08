@@ -1,0 +1,133 @@
+
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Brewly  - My Orders</title><link rel="stylesheet" href="css/order.css"></head><body>
+<header class="navbar"><div class="logo">Brewly </div><nav><a href="brewly-home.html">Home</a><a href="menu.html">Menu</a><a href="compare.html">Compare</a><a href="orders.html" class="active">My Orders</a><a href="brewly-profile.html" data-page="profile">My Profile</a></nav></header>
+<main class="container orders-page">
+  <section class="orders-section">
+    <h1>My Orders</h1>
+    <p class="subtitle">Track and review your recent purchases</p>
+    <div class="orders-list">
+
+    <div class="order-card">
+      <img src="images/espresso.jpg" alt="#2001">
+      <div class="order-info">
+        <h4>#2001</h4>
+        <p>Date: 2025-10-03</p>
+        <p>Status: <span class="status delivered">Delivered</span></p>
+        <p>Total: <strong>$15.20</strong></p>
+        <button class="btn small view-details" data-details='{"id": "#2001", "items": [{"name": "Espresso", "qty": 2, "price": 3.5}, {"name": "Blueberry Muffin", "qty": 1, "price": 3.2}], "total": 15.2}'>View Details</button>
+      </div>
+    </div>
+    
+    <div class="order-card">
+      <img src="images/latte.jpg" alt="#2002">
+      <div class="order-info">
+        <h4>#2002</h4>
+        <p>Date: 2025-10-01</p>
+        <p>Status: <span class="status shipped">Shipped</span></p>
+        <p>Total: <strong>$22.90</strong></p>
+        <button class="btn small view-details" data-details='{"id": "#2002", "items": [{"name": "Latte", "qty": 3, "price": 4.2}, {"name": "Cookie", "qty": 2, "price": 3.15}], "total": 22.9}'>View Details</button>
+      </div>
+    </div>
+    
+    <div class="order-card">
+      <img src="images/cappuccino.jpg" alt="#2003">
+      <div class="order-info">
+        <h4>#2003</h4>
+        <p>Date: 2025-09-28</p>
+        <p>Status: <span class="status processing">Processing</span></p>
+        <p>Total: <strong>$9.80</strong></p>
+        <button class="btn small view-details" data-details='{"id": "#2003", "items": [{"name": "Cappuccino", "qty": 2, "price": 4.0}, {"name": "Espresso Shot", "qty": 1, "price": 1.8}], "total": 9.8}'>View Details</button>
+      </div>
+    </div>
+    
+    <div class="order-card">
+      <img src="images/mocha.jpg" alt="#2004">
+      <div class="order-info">
+        <h4>#2004</h4>
+        <p>Date: 2025-09-20</p>
+        <p>Status: <span class="status cancelled">Cancelled</span></p>
+        <p>Total: <strong>$12.00</strong></p>
+        <button class="btn small view-details" data-details='{"id": "#2004", "items": [{"name": "Mocha", "qty": 1, "price": 5.0}, {"name": "Brownie", "qty": 1, "price": 3.0}], "total": 12.0}'>View Details</button>
+      </div>
+    </div>
+    
+    <div class="order-card">
+      <img src="images/americano.jpg" alt="#2005">
+      <div class="order-info">
+        <h4>#2005</h4>
+        <p>Date: 2025-09-15</p>
+        <p>Status: <span class="status delivered">Delivered</span></p>
+        <p>Total: <strong>$19.60</strong></p>
+        <button class="btn small view-details" data-details='{"id": "#2005", "items": [{"name": "Americano", "qty": 2, "price": 3.8}, {"name": "Sandwich", "qty": 1, "price": 12.0}], "total": 19.6}'>View Details</button>
+      </div>
+    </div>
+    
+    <div class="order-card">
+      <img src="images/iced-coffee.jpg" alt="#2006">
+      <div class="order-info">
+        <h4>#2006</h4>
+        <p>Date: 2025-09-10</p>
+        <p>Status: <span class="status delivered">Delivered</span></p>
+        <p>Total: <strong>$13.40</strong></p>
+        <button class="btn small view-details" data-details='{"id": "#2006", "items": [{"name": "Iced Coffee", "qty": 1, "price": 4.4}, {"name": "Bagel", "qty": 1, "price": 3.0}], "total": 13.4}'>View Details</button>
+      </div>
+    </div>
+    
+    <div class="order-card">
+      <img src="images/cold-brew.jpg" alt="#2007">
+      <div class="order-info">
+        <h4>#2007</h4>
+        <p>Date: 2025-09-02</p>
+        <p>Status: <span class="status shipped">Shipped</span></p>
+        <p>Total: <strong>$8.90</strong></p>
+        <button class="btn small view-details" data-details='{"id": "#2007", "items": [{"name": "Cold Brew", "qty": 1, "price": 5.9}, {"name": "Cookie", "qty": 1, "price": 3.0}], "total": 8.9}'>View Details</button>
+      </div>
+    </div>
+    
+    <div class="order-card">
+      <img src="images/macchiato.jpg" alt="#2008">
+      <div class="order-info">
+        <h4>#2008</h4>
+        <p>Date: 2025-08-28</p>
+        <p>Status: <span class="status delivered">Delivered</span></p>
+        <p>Total: <strong>$11.50</strong></p>
+        <button class="btn small view-details" data-details='{"id": "#2008", "items": [{"name": "Macchiato", "qty": 1, "price": 4.5}, {"name": "Muffin", "qty": 1, "price": 3.0}], "total": 11.5}'>View Details</button>
+      </div>
+    </div>
+    
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-backdrop" id="modal-backdrop">
+      <div class="modal" id="order-modal" role="dialog" aria-modal="true">
+        <button class="close modal-close">✖</button>
+        <h3>Order <span id="modal-order-id"></span></h3>
+        <div class="modal-body">
+          <table>
+            <thead><tr><th>Item</th><th>Qty</th><th>Price</th><th>Subtotal</th></tr></thead>
+            <tbody id="modal-items"></tbody>
+            <tfoot><tr><td colspan="3" class="right">Total</td><td id="modal-total"></td></tr></tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <section class="order-details">
+      <h2>Recent Order Example</h2>
+      <table>
+        <thead><tr><th>Item</th><th>Qty</th><th>Price</th><th>Subtotal</th></tr></thead>
+        <tbody>
+          <tr><td>Cappuccino</td><td>2</td><td>$4.00</td><td>$8.00</td></tr>
+          <tr><td>Blueberry Muffin</td><td>1</td><td>$3.20</td><td>$3.20</td></tr>
+          <tr><td>Espresso Shot</td><td>1</td><td>$3.00</td><td>$3.00</td></tr>
+        </tbody>
+        <tfoot><tr><td colspan="3" class="right">Total</td><td><strong>$14.20</strong></td></tr></tfoot>
+      </table>
+    </section>
+  </section>
+</main>
+
+<footer><p>© 2025 Brewly Café. All rights reserved.</p></footer>
+
+<script src="script.js"></script>
+</body></html>
